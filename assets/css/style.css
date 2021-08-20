@@ -1,0 +1,37 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  height: 200px;
+}
+.container .item-1 {
+  height: 100px;
+  width: 100px;
+  row-gap: 10px;
+  border: 1px solid #333;
+  background-color: #676e00;
+}
+.container .item-2 {
+  height: 100px;
+  width: 100px;
+  row-gap: 10px;
+  border: 1px solid #333;
+  background-color: #676e00;
+}
+.container .item-3 {
+  height: 100px;
+  width: 100px;
+  row-gap: 10px;
+  border: 1px solid #333;
+  background-color: #676e00;
+}
+
+/*# sourceMappingURL=style.css.map */
