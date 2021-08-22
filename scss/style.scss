@@ -1,43 +1,37 @@
-*{
-   margin:0px;
-   padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-
-$bgColor: #676e00;
-$height:100px;
-$spaceBetween:10px;
+$itemHeight: 200px;
+$itemWidth: 200px;
+$itemBorder: 1px solid #333;
+$itemBackgroundcolor: #ff3;
 
 .container {
   display: flex;
+  border: 1px solid #333;
+  flex-wrap: wrap-reverse;
   flex-direction: row;
-  grid-gap: 20px;
+  height: 300px;
   align-items: center;
+  gap: 12px;
   justify-content: center;
-  border:1px solid #333;
-  height: 200px;
- .item-1 {
-  height: $height;
-  width: 100px;
-  row-gap:$spaceBetween;
-  border: 1px solid #333;
-  background-color: $bgColor;
- }
- .item-2 {
-  height: $height;
-  width: 100px;
-  row-gap:$spaceBetween;
-  border: 1px solid #333;
-  background-color: $bgColor;
- }
- .item-3 {
-  height: $height;
-  width: 100px;
-  row-gap:$spaceBetween;
-  border: 1px solid #333;
-  background-color: $bgColor;
- }
+  .item-1 {
+    height: $itemHeight;
+    width: $itemWidth;
+    border: $itemBorder;
+    background-color: $itemBackgroundcolor;
+  }
+  .item-2 {
+    height: $itemHeight;
+    width: $itemWidth;
+    border: $itemBorder;
+    background-color: $itemBackgroundcolor;
+  }
+  .item-3 {
+    height: $itemHeight;
+    width: $itemWidth;
+    border: $itemBorder;
+    background-color: $itemBackgroundcolor;
+  }
 }
-
-
-
-
