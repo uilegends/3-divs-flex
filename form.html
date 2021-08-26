@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+<title>Forms</title>
+<link rel="stylesheet" href="assets/css/variable.css">
+ </head>
+<body>
+
+<div class="container">
+  <div class="form-div">
+    <h2>Form goes here...</h2>
+    <p>
+      <form>
+        <fieldset>
+          <legend>Username</legend>
+          <input type="text" name="username" />
+        </fieldset>
+        <fieldset>
+          <legend>Email</legend>
+          <input type="text" name="email" />
+        </fieldset>
+        <fieldset>
+          <legend>Password</legend>
+          <input type="text" name="password" />
+        </fieldset>
+        <span>
+          <button>Save</button>
+        </span>
+      </form>
+    </p>
+  </div>
+  <div class="item-list">
+    <h2>Item List</h2>
+    <ol>
+      <li><a>Coffee</a></li>
+      <li><a>Tea</a></li>
+      <li><a>Milk</a></li>
+    </ol>
+
+    <ol>
+      <li><a>Coffee</a></li>
+      <li><a>Tea</a></li>
+      <li><a>Milk</a></li>
+    </ol>
+  </div>
+</div>
+
+<script>
+  var form = document.querySelector('form');
+  
+  form.addEventListener('submit', function(e) {
+   e.preventDefault();
+    const formData = new FormData(e.target);
+    const formProps = Object.fromEntries(formData);
+    const a = [];
+    a.push(formProps);
+    console.log(a);
+  })
+</script>
+</body>
+</html>
